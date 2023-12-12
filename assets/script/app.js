@@ -145,7 +145,7 @@ let percentage;
 function setScore() {
   score = hitsNumber;
   date = new Date().toDateString();
-  percentage = Math.round(((score / words.length)) * 100);
+  percentage = (((score / words.length)) * 100).toFixed(1);
   scores.push({
     'score': score,
     'percentage': `${percentage}%`,
