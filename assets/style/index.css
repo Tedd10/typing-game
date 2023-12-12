@@ -16,7 +16,7 @@ body {
 }
 
 body {
-  background: #000 url(../img/wave\ background.jpg) center center / cover no-repeat fixed;
+  background: #000 url(../img/brown\ img.jpg) center center / cover no-repeat fixed;
   font-family: "Nunito-sans", "Open-sans", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
@@ -80,17 +80,17 @@ header div {
 }
 
 .container>h1 {
-  color: #c4145d;
+  color: #DB347A;
 
 }
 
-.start-button {
+/* .start-button {
   position: relative;
 }
 
 .restart-button {
   position: absolute;
-}
+} */
 
 .start-button:hover,
 .restart-button:hover {
@@ -221,7 +221,7 @@ main {
 .score-button {
   position: fixed;
   left: 50% - 140px;
-  bottom: 50px;
+  bottom: 30px;
   /* margin-top: 60px; */
   padding: 14px 0px;
   width: 140px;
