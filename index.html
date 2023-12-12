@@ -7,6 +7,7 @@
         <meta name ="description" content="Bernard: Student">
         <meta name="keywords" content="web developer, web, developer, front-end, html, css, javascript, react, sql">
         <title>Typing Game</title>
+        <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,25 +16,41 @@
         <script src="./assets/script/app.js" type="module"></script>
     </head>
     <body>
+      <div class="background"></div>
       <header>
         <div class="container header-contain">
-          <button class="start-button">Start</button>
+          <button type="button" class="start-button">Start</button>
+          <button type="button" class="restart-button hidden">Restart</button>
           <h1>Word Grinder</h1>
-          <div class="timer"><span>28</span></div>
+          <div><span class="timer"></span></div>
         </div>
       </header>
       <main>
-          <div class=" container flex-container">
-            <div class="modal">
-              <p>This is word grinder</p>
-              <p>The ultimate word typing game</p>
-              <p>Test your skills to complete all the words </p>
-              <p>before the timer runs out</p>
-            </div>
-            <p>Hits: 18</p>
-            <div class="word"><p>Earthquake</p></div>
-            <input type="text" class="input">
+        <div class="result">
+          <h1></h1>
+      </div>
+        <div class=" container flex-container">
+          <div class="game-text">
+            <p class="game-info">This is word grinder, press start to begin</p>
+            <p>Complete all the words before the timer runs out</p>
           </div>
+          <p class="hits">Hits: <span>0</span></p>
+          <div class="word-container">
+            <p class="word"></p>
+          </div>
+          <input type="text" class="input">
+          <button type="button" class="score-button">Score board</button>
+        </div>
+        <dialog>
+          <h2>High Scores</h2>
+        </dialog>
       </main>
+      <!-- <dialog class="results">
+        <div>
+          <h1>Game Over</h1>
+          <p></p>
+        </div> -->
+        
+      </dialog>
     </body>
 </html>

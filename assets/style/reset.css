@@ -1,3 +1,14 @@
+@charset "utf=8";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border-style: none;
+  vertical-align: baseline;
+  font-family: inherit;
+}
+
 html,
 body {
   height: 100dvh;
